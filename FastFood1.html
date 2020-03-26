@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title src="FastFood1.js">Menu Order Form</title>
+    <!--<link rel="stylesheet" type="text/css" href="FastFood1.css">-->
+    <!--script><button id="button">Your Order</button></script>-->
+</head>
+<body>
+        <h1><b>Broad Street Vine Pubhouse</b></h1>
+
+        <h2>Menu</h2>
+        <ul>
+
+                    <li><b>BURGERS: </b><br>
+                           <li> Hamburger </li>
+                            <li> Cheeseburger </li>
+                            <li> Vegetarian Burger </li>
+                            <li> Vegan Burger </li>
+                            <li> Fish Burger </li>
+                        </li>
+                    <br>
+                    <li><b>SIDES: </b><br>
+                            <li> French Fries </li>
+                            <li> Sweet Potato Fries </li>
+                            <li> Onion Rings </li>
+                            <li> House Salad </li>
+                    </li>
+                    <br>
+                    <li><b>DRINKS: </b><br>
+                                <li> Sweet Iced Tea </li>
+                                <li> Unsweet Iced Tea </li>
+                                <li> Lemonade </li>
+                                <li> Sprite Soda </li>
+                                <li> Orange Soda </li>
+                                <li> Coke Soda </li>
+                        </li>
+        </ul>
+
+        <br>
+        <br>
+
+        <form  id="console.log">
+            
+            <h2>Order Here:</h2>
+            <input name="Food Item: Quanty" type="text" size="50">
+        
+        </form>
+
+            <p><h3>Order Format: Type Item: Type Nurmeric Quanty, Type Next Item: Type Nurmeric Quanty</h3></p> 
+            
+       
+        <button id2="outputname" onclick="outputname()">Submit</button>
+
+        <script>
+        function outputname() {
+
+                var x,y,order;
+                x=document.getElementById("console.log");
+                y=x.elements["Food Item: Quanty"].value;
+                
+                document.getElementById("menu").innerHTML="Thank you for your order: " +y+"<br>";
+                document.getElementById("menu").innerHTML+=y (" Come Again! <br>");
+        } 
+        </script>
+
+<script>
+    function myFunction() {
+        var menu = ["Hamburger:, 5", "Cheeseburger:, 2", "Vegetarian Burger:, 3", "Vegan Burger:, 10",
+        "Fish Burger:, 6", "French Fries:, 9",  "Sweet Potato Fries:, 8", "Onion Rings:, 6",
+        "House Salad: 2",  "Sweet Iced Tea:, 5", "Unsweet Iced Tea:, 10", "Lemonade: 7",
+        "Sprite Soda: 7",  "Orange Soda: 1", "Coke Soda: 7"];
+
+        document.getElementById("menu")
+    }
+</script>
+
+
+<p id="menu"></p>
+<p id2="outputname"></p>
+<p id3="Menu3"></p>
+
+</body>
+</html>
